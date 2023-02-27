@@ -18,6 +18,21 @@ body {
 	background-color: var(--primery-white-color);
 	letter-spacing: 0.02em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul {
+	padding-left: 0;
+}
 
 .list {
 	list-style: none;
@@ -28,10 +43,37 @@ body {
 	font-style: normal;
 }
 
+.container {
+	width: 1440px;
+	padding-left: 156px;
+	padding-right: 156px;
+	margin: 0 auto;
+}
 /* стили для index.html*/
 /* header */
 .header {
 	border-bottom: 1px solid var(--border-color);
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.navigation,
+.nav-links,
+.nav-links .list,
+.address > .list {
+	display: flex;
+}
+
+.navigation {
+	justify-content: space-between;
+}
+
+.nav-links ul li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.address ul li:first-child {
+	margin-right: 40px;
 }
 
 .logo {
@@ -41,6 +83,7 @@ body {
 	font-size: 18px;
 	line-height: 1.3;
 	color: var(--primery-brend-color);
+	margin-right: 76px;
 }
 
 .logo.dark {
@@ -62,7 +105,7 @@ body {
 }
 
 .nav.link.active {
-	color: var(--accent-link-color)
+	color: var(--accent-link-color);
 }
 
 .address.link {
@@ -84,6 +127,7 @@ body {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.1;
+	text-align: center;
 }
 
 .button.hero {
@@ -100,6 +144,8 @@ body {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-style: none;
 	border-radius: 4px;
+	margin: 0 auto;
+	display: block;
 }
 
 .button.hero:hover {
@@ -113,8 +159,17 @@ body {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
+	margin-bottom: 8px;
 }
 
+.section.adv {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.advanteges .list {
+	display: flex;
+	gap: 24px;
+}
 /* doing */
 
 .section-header {
@@ -122,6 +177,17 @@ body {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 72px;
+}
+
+.doing .list {
+	display: flex;
+	gap: 24px;
+}
+
+.section.do {
+	padding-bottom: 120px;
 }
 
 .pic {
@@ -130,6 +196,8 @@ body {
 
 .section.team {
 	background-color: var(--secondary-white-color);
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .team.item {
@@ -138,14 +206,34 @@ body {
 	border-radius: 0px 0px 4px 4px;
 }
 
+.team .list {
+	display: flex;
+	gap: 24px;
+}
+
+.name-pos {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
 .name {
 	color: var(--header-text-color);
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
+	text-align: center;
+}
+
+.position {
+	text-align: center;
 }
 
 /* footer */
+
+footer.footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 
 .footer {
 	background-color: var(--header-text-color);
@@ -153,6 +241,12 @@ body {
 
 .footer.text {
 	color: var(--primery-white-color);
+	max-width: 264px;
+}
+
+.container.foot > .logo.link {
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 /* portfolio */
@@ -181,6 +275,29 @@ body {
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+section.filters {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.filters.list {
+	display: flex;
+	gap: 24px;
+	padding-bottom: 72px;
+	justify-content: center;
+}
+
+.filters.list + .list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px 24px;
+}
+
+.port-var {
+	border: 1px solid var(--border-color);
+	max-width: 30%;
+}
+
 .port-name {
 	color: var(--header-text-color);
 	font-weight: 500;
@@ -188,11 +305,29 @@ body {
 	line-height: 1.2;
 }
 
+.post-name {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 16px;
+}
+
 .port-filtr {
 	color: var(--body-text-color);
 }
 
+.img-variant {
+	width: inherit;
+}
+
 .hide {
 	position: absolute;
-	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
