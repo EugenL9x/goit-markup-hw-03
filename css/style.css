@@ -65,7 +65,7 @@ ul {
 }
 
 .navigation {
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .nav-links ul li:not(:last-child) {
@@ -86,7 +86,7 @@ ul {
 	margin-right: 76px;
 }
 
-.logo.dark {
+.log.dark {
 	color: var(--header-text-color);
 }
 
@@ -107,7 +107,9 @@ ul {
 .nav.link.active {
 	color: var(--accent-link-color);
 }
-
+.address {
+	margin-left: auto;
+}
 .address.link {
 	color: var(--body-text-color);
 }
@@ -290,12 +292,24 @@ section.filters {
 .filters.list + .list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 48px 24px;
 }
 
 .port-var {
-	border: 1px solid var(--border-color);
-	max-width: 30%;
+	margin-right: 24px;
+	margin-bottom: 48px;
+}
+
+.list li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.post-name {
+	border-bottom: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 16px;
 }
 
 .port-name {
@@ -303,12 +317,7 @@ section.filters {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
-}
-
-.post-name {
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-left: 16px;
+	padding-bottom: 8px;
 }
 
 .port-filtr {
@@ -316,6 +325,7 @@ section.filters {
 }
 
 .img-variant {
+	display: block;
 	width: inherit;
 }
 
