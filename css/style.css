@@ -133,6 +133,10 @@ img {
 	padding-bottom: 188px;
 }
 
+.hero-for {
+	text-transform: none;
+}
+
 .hero-header {
 	width: 496px;
 	margin-bottom: 48px;
