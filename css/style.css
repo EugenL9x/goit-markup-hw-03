@@ -129,8 +129,8 @@ img {
 .section.hero {
 	background-color: var(--header-text-color);
 	text-transform: capitalize;
-	margin-top: 188px;
-	margin-bottom: 188px;
+	padding-top: 188px;
+	padding-bottom: 188px;
 }
 
 .hero-header {
@@ -140,7 +140,8 @@ img {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.1;
-	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .button.hero {
